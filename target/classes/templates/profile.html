@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Профиль</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <h2 class="header_name" th:text="*{user.name + ' ' + user.surname}"></h2>
+            <img class="header_logo" src="/images/logo.svg" alt="">
+            <ul class="header_links">
+                <li><a th:href="@{/profile}">Главная</a></li>
+                <a th:href="${isAdmin ? '/statements/admin/all' : '/statements/user'}"
+                   th:text="${isAdmin ? 'Посмотреть пользовательские заявки' : 'Все заявки'}">
+                </a>
+                <li><a th:href="@{/logout}">Выйти</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="section_registration">
+    <div class="profile-container">
+        <img src="/images/ava-temp.svg" alt="ava">
+        <div class="data-user">
+            <h2 class="data-user-title">Ваши данные</h2>
+            <p th:text="*{user.name + ' ' + user.surname + ' ' +  user.middleName}"></p>
+            <span th:text="*{'@' + user.username}"></span>
+        </div>
+        <div class="data-user">
+            <h2 class="data-user-title">Дополнительные данные</h2>
+            <p th:text="*{user.number}"></p>
+            <span th:text="*{user.email}"></span>
+        </div>
+        <a class="button button-2" th:href="@{/logout}">Выйти из аккаунта</a>
+    </div>
+</div>
+</body>
+</html>

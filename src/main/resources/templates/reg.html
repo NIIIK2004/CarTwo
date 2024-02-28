@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="section_registration">
+    <div class="reg-container">
+        <div class="registration__wrapper">
+            <img src="/images/logo.svg">
+            <h1 class="subtitle reg_title">Регистрация</h1>
+            <form method="POST" class="auth__form" th:action="@{/registration/save}" th:object="${user}">
+                <div>
+                    <input type="text" id="name" th:field="*{name}" placeholder="Имя">
+                    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="surname" th:field="*{surname}" placeholder="Фамилия">
+                    <span th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="middleName" th:field="*{middleName}" placeholder="Отчество">
+                    <span th:if="${#fields.hasErrors('middleName')}" th:errors="*{middleName}"></span>
+                </div>
+
+                <div>
+                    <input type="number" id="tel" th:field="*{number}" placeholder="Номер телефона">
+                    <span th:if="${#fields.hasErrors('number')}" th:errors="*{number}"></span>
+
+                </div>
+
+                <div>
+                    <input type="email" id="email" th:field="*{email}" placeholder="Email">
+                    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="username" th:field="*{username}"
+                           placeholder="Логин">
+                    <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
+                </div>
+
+                <div>
+                    <input type="password" id="password" th:field="*{password}"
+                           placeholder="Пароль">
+                    <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+                </div>
+
+                <p class="auth__info">
+                    Уже есть аккаунт? <a th:href="@{/login}">Войти</a>
+                </p>
+
+                <div class="security">
+                    <img src="/images/lock.svg" alt="lock">
+                    <p>Ваши данные будут надёжно защищены технологией Spring Security</p>
+                </div>
+                <button class="auth_button" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

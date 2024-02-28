@@ -1,0 +1,389 @@
+body {
+    background: #FFF;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+    color: #000;
+}
+
+.container {
+    max-width: 1634px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 38px;
+    color: #455065;
+    margin-top: 50px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 26px;
+    color: #455065;
+}
+
+label {
+    font-size: 14px;
+}
+
+textarea,
+input {
+    font-family: "Mulish", sans-serif;
+    width: -webkit-fill-available;
+    font-weight: 400;
+    font-size: 17px;
+    color: #455065;
+    border: 1px solid #d8d9dc;
+    padding: 28px;
+    transition: all .3s;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    color: #000000;
+    border: 1px solid #2B5DEB;
+}
+
+input::placeholder {
+    color: #525252;
+}
+
+.button,
+button {
+    font-family: "Mulish", sans-serif;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 21px 51px;
+    width: 100%;
+    background: #2b5deb;
+    transition: all .3s;
+    border: 1px solid transparent;
+}
+
+.button:hover,
+button:hover {
+    color: #2b5deb !important;
+    border: 1px solid #2b5deb;
+    background: transparent;
+}
+
+span {
+    display: block;
+}
+
+textarea {
+    font-family: "Mulish", sans-serif;
+    resize: none;
+}
+
+a {
+    color: black;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #2b5deb;
+}
+
+.posadka {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 931px;
+    margin: 100px auto;
+}
+
+.posadka img {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.posadka-title {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+    color: #000;
+}
+
+.posadka-desc {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000;
+}
+
+.posadka-btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.posadka-btns a {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 13px 51px;
+    background: #2b5deb;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+
+.posadka-btns a:hover {
+    border: 1px solid #2b5deb;
+    background: transparent !important;
+    color: #2b5deb;
+}
+
+.reg-container {
+    max-width: 443px;
+    margin: 0 auto;
+}
+
+.registration__wrapper {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.auth__form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.security {
+    display: flex;
+    font-weight: 300;
+    font-size: 15px;
+    color: #455065;
+    align-items: center;
+    gap: 6px;
+    line-height: 130%;
+    text-align: left;
+    padding: 10px;
+}
+
+.auth__info {
+    font-size: 17px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.profile-container {
+    max-width: 400px;
+    padding: 0 15px;
+    margin: 30px auto 0;
+}
+
+.profile-container img {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+
+}
+
+.data-user {
+    padding: 19px 52px;
+    border: 1px solid #2b5deb;
+    border-radius: 10px;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.data-user p {
+    font-weight: 400;
+    font-size: 21px;
+    color: #455065;
+
+}
+
+.data-user span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #455065;
+}
+
+.data-user-title {
+    font-weight: 700;
+    font-size: 21px;
+    color: #455065;
+}
+
+.button-2 {
+    display: block;
+    margin-top: 60px;
+    height: fit-content;
+    width: auto;
+    text-align: center;
+}
+
+.header {
+    border-bottom: 1px solid #000;
+}
+
+.header-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.header img {
+    width: 115px;
+}
+
+.header_name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    flex: 1;
+}
+
+.header_logo {
+}
+
+.header_links {
+    flex: 1;
+    justify-content: right;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+.create-statements-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 28px;
+}
+
+.back {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.profile__wrapper {
+    margin-top: 50px;
+
+}
+
+.statements_inner {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.statements_block {
+    border-radius: 10px;
+    width: 346px;
+    height: 215px;
+    background: #ededed;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statements_block-top h2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+.statements_block-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.statements_block-bottom span {
+    font-weight: 500;
+    font-size: 21px;
+    color: #000;
+}
+
+.statements_block-bottom-button span{
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 81px;
+    padding: 5px 17px;
+    display: block;
+    line-height: 130%;
+}
+
+.statements_block-middle {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    max-width: 346px;
+
+    word-wrap: break-word;
+    line-height: 140%;
+}
+
+.button-3 {
+    position: fixed;
+    bottom: 64px;
+    right: 143px;
+    width: fit-content;
+
+    font-size: 16px;
+    padding: 14px 30px;
+}
+
+.statements_block-bottom-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.statements_block-bottom-button form {
+    display: flex;
+    gap: 5px;
+}
+.admin-btn {
+    font-weight: 400;
+    font-size: 14px;
+    color: #38ea8a;
+    background: transparent;
+    padding: unset;
+}
+
+.red {
+    color: #D44265;
+}
+
+.auth__form span {
+    display: block;
+    color: #b90000;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+

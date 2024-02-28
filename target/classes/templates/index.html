@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Посадочная</title>
+</head>
+<body>
+<section class="posadka">
+    <img src="/images/logo.svg">
+    <h1 class="posadka-title">Привет это посадочная страница данного сервиса. Я понимаю что все должно быть красиво -
+        картинки, шрифты, дизайн в целом
+        Но этого все нету, Я просто не успел чуток, к тому же эту страницу даже не просили, но я не знаю что можно было
+        написать в @GetMapping(“/”) и поэтому решил придумать такую страницу</h1>
+    <p class="posadka-desc">Хватит болтать, едемте регистрироваться уже!</p>
+    <div class="posadka-btns">
+        <a th:href="@{/registration}">Регистрация</a>
+        <a th:href="@{/login}" style="background: #17da70;">Авторизация</a>
+    </div>
+</section>
+</body>
+</html>
